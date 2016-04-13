@@ -51,6 +51,14 @@ class Rocks extends GameObject
   {
     attack1.y = -10;
   }
+  if ( attack2.x == mouseX )
+  {
+    attack2.x = 710;
+  }
+  if ( attack3.y == mouseY )
+  {
+    attack3.y = 510;
+  }
 }
  
 }
