@@ -9,7 +9,7 @@ GameObject()
 
 
 
-
+int planethealth = 1000;
 float attacksize = 10;
 float planetsize = 100;
 PVector planet;

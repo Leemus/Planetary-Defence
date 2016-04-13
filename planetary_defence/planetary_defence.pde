@@ -24,6 +24,7 @@ void draw()
  rocks.ballsoutta();
  rocks.mouseClicked();
  ui.planethealth();
+ ui.planethit(rocks);
 
   
 }
