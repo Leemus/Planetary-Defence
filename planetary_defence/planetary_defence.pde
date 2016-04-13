@@ -4,14 +4,18 @@ void setup()
   
   gameobject = new GameObject();
   planet = new Planet();
+  rocks = new Rocks();
 
 }
 GameObject gameobject;
 Planet planet;
+Rocks rocks;
+
 
 void draw()
 {
   background(0);
  planet.planetcore();
+ rocks.ballsoutta();
   
 }
