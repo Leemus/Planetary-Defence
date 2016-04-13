@@ -1,4 +1,5 @@
 void setup()
+//test
 {
   size(700,500);
   
@@ -17,5 +18,6 @@ void draw()
   background(0);
  planet.planetcore();
  rocks.ballsoutta();
+ rocks.mouseClicked();
   
 }

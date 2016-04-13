@@ -20,5 +20,13 @@ class Rocks extends GameObject
       attack.x ++;
    } 
   }
+  
+  void mouseClicked()
+{
+  if ( attack.x == mouseX )
+  {
+    attack.x = -10;
+  }
+}
  
 }
