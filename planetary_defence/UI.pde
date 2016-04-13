@@ -14,7 +14,8 @@ UI()
  
  void planethit(Rocks rock)
 {
-  float  distance= sqrt(sq(planet.x-rock.attack.x)+sq(planet.y-rock.attack.y));
+  float  distance= sqrt(sq(planet.x-rock.attack.x )+sq(planet.y-rock.attack.y));
+  float  distance1= sqrt(sq(planet.x-rock.attack1.x )+sq(planet.y-rock.attack1.y));
   float attackrad = attacksize / 2;
  float planetrad = planetsize / 2;
  
@@ -22,9 +23,13 @@ UI()
   if (distance==planetrad+attackrad)
   {
     planethealth -= 10;
-    attack.x = -20;
+   
   }
-  
+  if (distance1==planetrad+attackrad)
+  {
+    planethealth -= 10;
+   
+  }
   
  
 

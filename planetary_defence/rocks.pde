@@ -19,6 +19,14 @@ class Rocks extends GameObject
     {
       attack.x ++;
    } 
+     ellipse(attack1.x, attack1.y, attacksize, attacksize);
+    
+    if(attack1.x == 350)
+    {
+      attack1.y ++;
+   } 
+     
+   
   }
   
   void mouseClicked()
@@ -26,6 +34,10 @@ class Rocks extends GameObject
   if ( attack.x == mouseX )
   {
     attack.x = -10;
+  }
+  if ( attack1.y == mouseY )
+  {
+    attack1.y = -10;
   }
 }
  
