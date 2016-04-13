@@ -25,6 +25,18 @@ class Rocks extends GameObject
     {
       attack1.y ++;
    } 
+    ellipse(attack2.x, attack2.y, attacksize, attacksize);
+    
+    if(attack2.y == 250)
+    {
+      attack2.x --;
+   } 
+   ellipse(attack3.x, attack3.y, attacksize, attacksize);
+    
+    if(attack3.x == 350)
+    {
+      attack3.y --;
+   } 
      
    
   }
