@@ -6,11 +6,15 @@ void setup()
   gameobject = new GameObject();
   planet = new Planet();
   rocks = new Rocks();
+  ui = new UI();
+  
 
 }
 GameObject gameobject;
 Planet planet;
 Rocks rocks;
+UI ui;
+
 
 
 void draw()
@@ -19,5 +23,7 @@ void draw()
  planet.planetcore();
  rocks.ballsoutta();
  rocks.mouseClicked();
+ ui.planethealth();
+
   
 }
