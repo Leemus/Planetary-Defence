@@ -8,6 +8,8 @@ void setup()
   rocks = new Rocks();
   ui = new UI();
   space = new Space();
+  time = new Time();
+  powerups = new Powerups();
   
 
 }
@@ -16,6 +18,8 @@ Planet planet;
 Rocks rocks;
 UI ui;
 Space space;
+Time time;
+Powerups powerups;
 
 
 
@@ -28,6 +32,8 @@ void draw()
  ui.planethealth();
  ui.planethit(rocks);
  space.sky();
+ time.timer();
+ powerups.addhealth();
 
   
 }
