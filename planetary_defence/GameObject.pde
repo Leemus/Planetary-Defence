@@ -9,21 +9,30 @@ GameObject()
  attack3 = new PVector(350f, 510f);
  power = new PVector(50f, 200f);
 
+healthsize = 50;
+ 
+
 }
 
 
 
-int planethealth = 1000;
+
 float attacksize = 10;
 float planetsize = 100;
+float healthX = mouseX;
+float healthY= mouseY;
+float healthsize = 0;
 PVector planet;
 PVector attack;
 PVector attack1;
 PVector attack2;
 PVector attack3;
-  int s = second(); 
-  int m = minute();
-  PVector power;
+PVector power;
+int s = second(); 
+int m = minute();
+int planethealth = 1000;
+  
+ 
  
  
 }

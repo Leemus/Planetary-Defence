@@ -8,8 +8,10 @@ UI()
  void planethealth()
  {
    
+   
    text(planethealth, 135, 20);
-   text("PLANET HEALTH:", 30, 20); 
+   text("PLANET HEALTH:", 30, 20);
+   
  }
  
  void planethit(Rocks rock)
@@ -43,7 +45,12 @@ UI()
    
   }
   
+  
+  
+ 
+  
  
 
 }
+
 }

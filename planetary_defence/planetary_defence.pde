@@ -1,5 +1,5 @@
-void setup()
-// teaching Cian
+void setup() 
+
 {
   size(700,500);
   
@@ -8,7 +8,6 @@ void setup()
   rocks = new Rocks();
   ui = new UI();
   space = new Space();
-  time = new Time();
   powerups = new Powerups();
   
 
@@ -18,7 +17,7 @@ Planet planet;
 Rocks rocks;
 UI ui;
 Space space;
-Time time;
+
 Powerups powerups;
 
 
@@ -29,11 +28,14 @@ void draw()
  planet.planetcore();
  rocks.ballsoutta();
  rocks.mouseClicked();
+ rocks.rockscount();
  ui.planethealth();
  ui.planethit(rocks);
  space.sky();
- time.timer();
  powerups.addhealth();
+ powerups.mouseClicked();
+ 
+
 
   
 }

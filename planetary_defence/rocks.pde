@@ -60,5 +60,15 @@ class Rocks extends GameObject
     attack3.y = 510;
   }
 }
+
+void rockscount ()
+{
+  int score = 0;
+  text(score, 650, 50);
+ if (attack.y == mouseX)
+ {
+   score +=1;
+ }
+}
  
 }
