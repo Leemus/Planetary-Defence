@@ -43,32 +43,37 @@ class Rocks extends GameObject
   
   void mouseClicked()
 {
+  
   if ( attack.x == mouseX )
   {
     attack.x = -10;
+    
+    score += 1;
   }
   if ( attack1.y == mouseY )
   {
     attack1.y = -10;
+    score += 1;
   }
   if ( attack2.x == mouseX )
   {
     attack2.x = 710;
+    score += 1;
   }
   if ( attack3.y == mouseY )
   {
     attack3.y = 510;
+    score += 1;
   }
 }
-
 void rockscount ()
 {
-  int score = 0;
-  text(score, 650, 50);
- if (attack.y == mouseX)
- {
-   score +=1;
- }
+  
+  text("ASTEROID COUNT:", 530,20);
+  text(score, 650, 20);
+
 }
+
+
  
 }

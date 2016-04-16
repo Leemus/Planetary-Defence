@@ -28,12 +28,14 @@ void draw()
  planet.planetcore();
  rocks.ballsoutta();
  rocks.mouseClicked();
- rocks.rockscount();
  ui.planethealth();
  ui.planethit(rocks);
+ ui.mouseClicked();
+ rocks.rockscount();
  space.sky();
  powerups.addhealth();
  powerups.mouseClicked();
+ 
  
 
 

@@ -10,6 +10,8 @@ void planetcore()
   ellipse(planet.x,planet.y,planetsize,100);
   ellipse(mouseX,mouseY,healthsize - 49,healthsize - 49);
   
+  
+  
 }
 
 }

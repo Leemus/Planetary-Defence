@@ -19,19 +19,16 @@ void addhealth()
   
 
 }
-
-void mouseClicked()
+ void mouseClicked()
 {
-if ( power.x == mouseX )
+  int s = second();
+if ( power.x == 50f && power.x == mouseX )
   {
-
-    power.x -= 200;
-  }
-  
- 
-  
- 
    
+  
+    power.x = -200;
+  }
+  text(s,100,100);
 }
 
 

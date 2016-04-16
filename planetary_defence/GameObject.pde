@@ -31,6 +31,7 @@ PVector power;
 int s = second(); 
 int m = minute();
 int planethealth = 1000;
+int score = 0;
   
  
  

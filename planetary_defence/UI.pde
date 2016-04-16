@@ -14,6 +14,8 @@ UI()
    
  }
  
+
+ 
  void planethit(Rocks rock)
 {
   float  distance= sqrt(sq(planet.x-rock.attack.x )+sq(planet.y-rock.attack.y));
@@ -27,7 +29,7 @@ UI()
   if (distance==planetrad+attackrad)
   {
     planethealth -= 10;
-   
+    
   }
   if (distance1==planetrad+attackrad)
   {
@@ -44,13 +46,27 @@ UI()
     planethealth -= 10;
    
   }
-  
-  
-  
- 
-  
- 
-
 }
+  
+ void mouseClicked()
+{
+if ( power.x == mouseX )
+  {
+  
+   planethealth += 50;
+    power.x = -200;
+  }
+  
+ 
+  
+ 
+   
+}
+  
+  
+  
+ 
+  
+ 
 
 }
