@@ -44,23 +44,23 @@ class Rocks extends GameObject
   void mouseClicked()
 {
   
-  if ( attack.x == mouseX )
+  if ( attack.x == mouseX  )
   {
     attack.x = -10;
     
     score += 1;
   }
-  if ( attack1.y == mouseY )
+  if ( attack1.y == mouseY  )
   {
     attack1.y = -10;
     score += 1;
   }
-  if ( attack2.x == mouseX )
+  if ( attack2.x == mouseX)
   {
     attack2.x = 710;
     score += 1;
   }
-  if ( attack3.y == mouseY )
+  if ( attack3.y == mouseY)
   {
     attack3.y = 510;
     score += 1;
@@ -71,6 +71,31 @@ void rockscount ()
   
   text("ASTEROID COUNT:", 530,20);
   text(score, 654, 20);
+
+}
+
+void respawn()
+{
+ if (attack.x >= 700)
+ {
+  attack.x = -10; 
+ }
+
+
+if (attack2.x <= 0)
+{
+  attack2.x = 710;
+}
+
+if(attack1.y >= 500)
+{
+  attack1.y = -10;
+}
+
+if (attack3.y <= 0)
+{
+ attack3.y = 510;
+}
 
 }
 

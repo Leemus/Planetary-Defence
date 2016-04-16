@@ -28,22 +28,22 @@ UI()
 
   if (distance==planetrad+attackrad)
   {
-    planethealth -= 10;
+    planethealth -= 100;
     
   }
   if (distance1==planetrad+attackrad)
   {
-    planethealth -= 10;
+    planethealth -= 100;
    
   }
   if (distance2==planetrad+attackrad)
   {
-    planethealth -= 10;
+    planethealth -= 100;
    
   }
   if (distance3==planetrad+attackrad)
   {
-    planethealth -= 10;
+    planethealth -= 100;
    
   }
 }
@@ -63,7 +63,17 @@ if ( power.x == mouseX )
    
 }
   
-  
+  void planetdeath()
+{
+ if (planethealth <= 0)
+ {
+   fill(#18DE0B);
+ellipse(350,250,1000,1000);
+textSize(20);
+fill(#FF0900);
+text("YOU FAILED! THE PLANET WAS DESTROYED", 140, 200);
+ }
+}
   
  
   

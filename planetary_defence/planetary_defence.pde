@@ -9,6 +9,7 @@ void setup()
   ui = new UI();
   space = new Space();
   powerups = new Powerups();
+  end = new End();
   
 
 }
@@ -19,6 +20,7 @@ UI ui;
 Space space;
 
 Powerups powerups;
+End end;
 
 
 
@@ -35,6 +37,8 @@ void draw()
  space.sky();
  powerups.addhealth();
  powerups.mouseClicked();
+ rocks.respawn();
+ ui.planetdeath();
  
  
 
