@@ -8,8 +8,8 @@ UI()
  void planethealth()
  {
    
-   
-   text(planethealth, 135, 20);
+   textSize(12);
+   text(planethealth, 147, 20);
    text("PLANET HEALTH:", 30, 20);
    
  }

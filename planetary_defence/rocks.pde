@@ -70,7 +70,7 @@ void rockscount ()
 {
   
   text("ASTEROID COUNT:", 530,20);
-  text(score, 650, 20);
+  text(score, 654, 20);
 
 }
 
