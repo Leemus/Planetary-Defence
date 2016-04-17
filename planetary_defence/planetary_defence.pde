@@ -9,7 +9,7 @@ void setup()
   ui = new UI();
   space = new Space();
   powerups = new Powerups();
-  end = new End();
+
   
 
 }
@@ -20,7 +20,7 @@ UI ui;
 Space space;
 
 Powerups powerups;
-End end;
+
 
 
 

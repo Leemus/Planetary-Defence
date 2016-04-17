@@ -28,22 +28,22 @@ UI()
 
   if (distance==planetrad+attackrad)
   {
-    planethealth -= 100;
+    planethealth -= 50;
     
   }
   if (distance1==planetrad+attackrad)
   {
-    planethealth -= 100;
+    planethealth -= 50;
    
   }
   if (distance2==planetrad+attackrad)
   {
-    planethealth -= 100;
+    planethealth -= 50;
    
   }
   if (distance3==planetrad+attackrad)
   {
-    planethealth -= 100;
+    planethealth -= 50;
    
   }
 }
@@ -69,9 +69,15 @@ if ( power.x == mouseX )
  {
    fill(#18DE0B);
 ellipse(350,250,1000,1000);
-textSize(20);
+textSize(50);
 fill(#FF0900);
-text("YOU FAILED! THE PLANET WAS DESTROYED", 140, 200);
+text("PLANETARY DEFENCE", 70,100);
+textSize(20);
+fill(255);
+text("YOU FAILED! THE PLANET WAS DESTROYED", 130, 230);
+text("The galaxy was counting on you!" , 140 , 280);
+text("Be sure to try again.",220, 320);
+
  }
 }
   

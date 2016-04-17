@@ -9,6 +9,8 @@ GameObject()
  attack2 = new PVector(710f, 250f);
  attack3 = new PVector(350f, 510f);
  power = new PVector(50f, 200f);
+ destroy = new PVector(mouseX,mouseY);
+
  textFont(font);
 healthsize = 50;
  
@@ -29,6 +31,7 @@ PVector attack1;
 PVector attack2;
 PVector attack3;
 PVector power;
+PVector destroy;
 PFont font;
 int s = second(); 
 int m = minute();

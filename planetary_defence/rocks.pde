@@ -43,19 +43,21 @@ class Rocks extends GameObject
   
   void mouseClicked()
 {
+  float  bye= sqrt(sq(destroy.x-attack.x )+sq(destroy.y-attack.y));
+  float attackrad = attacksize / 2;
   
-  if ( attack.x == mouseX  )
+  if ( attack.x == mouseX )
   {
     attack.x = -10;
     
     score += 1;
   }
-  if ( attack1.y == mouseY  )
+  if ( attack1.y == mouseY )
   {
     attack1.y = -10;
     score += 1;
   }
-  if ( attack2.x == mouseX)
+  if ( attack2.x == mouseX )
   {
     attack2.x = 710;
     score += 1;
