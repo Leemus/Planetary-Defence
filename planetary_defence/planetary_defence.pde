@@ -39,6 +39,7 @@ void draw()
  powerups.mouseClicked();
  rocks.respawn();
  ui.planetdeath();
+ rocks.win();
  
  
 

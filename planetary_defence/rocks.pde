@@ -101,6 +101,22 @@ if (attack3.y <= 0)
 
 }
 
-
+void win()
+{
+  if (score >= 35)
+  {
+    println("Done");
+     fill(#18DE0B);
+ellipse(350,250,1000,1000);
+textSize(50);
+fill(#FF0900);
+text("PLANETARY DEFENCE", 70,100);
+textSize(20);
+fill(255);
+text("YOU DID IT!", 250, 230);
+text("The galaxy is saved!" , 200 , 280);
+text("But the fight is not over..be sure to try again.",90, 320);
+  }
+}
  
 }
