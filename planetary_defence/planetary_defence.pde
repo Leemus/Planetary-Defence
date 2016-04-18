@@ -18,7 +18,6 @@ Planet planet;
 Rocks rocks;
 UI ui;
 Space space;
-
 Powerups powerups;
 
 
@@ -41,8 +40,6 @@ void draw()
  ui.planetdeath();
  rocks.win();
  
- 
-
 
   
 }

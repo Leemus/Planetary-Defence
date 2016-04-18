@@ -2,10 +2,12 @@ class Rocks extends GameObject
 {
   Rocks()
   {
-  
+  attackspeedx = attack.x;
+  attackspeedy = attack.y;
     
   }
-  
+  float attackspeedx;
+  float attackspeedy;
   
     void ballsoutta()
   {
@@ -49,7 +51,7 @@ class Rocks extends GameObject
   if ( attack.x == mouseX )
   {
     attack.x = -10;
-    
+    attackspeedx += 100;
     score += 1;
   }
   if ( attack1.y == mouseY )
