@@ -2,24 +2,27 @@ class Rocks extends GameObject
 {
   Rocks()
   {
-  attackspeedx = attack.x;
-  attackspeedy = attack.y;
+
+  
     
   }
-  float attackspeedx;
-  float attackspeedy;
-  
+
     void ballsoutta()
   {
+    
     fill(#FF1A1A);
     stroke(#F7FF1A);
-    
+    attack.x += speedX;
+    attack.y += speedY;
+  
+  
     
     ellipse(attack.x, attack.y, attacksize, attacksize);
     
     if(attack.y == 250)
     {
       attack.x ++;
+     
    } 
      ellipse(attack1.x, attack1.y, attacksize, attacksize);
     
@@ -48,11 +51,13 @@ class Rocks extends GameObject
   float  bye= sqrt(sq(destroy.x-attack.x )+sq(destroy.y-attack.y));
   float attackrad = attacksize / 2;
   
+  
   if ( attack.x == mouseX )
   {
     attack.x = -10;
-    attackspeedx += 100;
+
     score += 1;
+    
   }
   if ( attack1.y == mouseY )
   {
@@ -83,6 +88,7 @@ void respawn()
  if (attack.x >= 700)
  {
   attack.x = -10; 
+ 
  }
 
 
@@ -105,7 +111,7 @@ if (attack3.y <= 0)
 
 void win()
 {
-  if (score >= 35)
+  if (score >= 50)
   {
     println("Done");
      fill(#18DE0B);

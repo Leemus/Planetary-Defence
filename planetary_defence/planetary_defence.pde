@@ -1,3 +1,11 @@
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+AudioPlayer player;
+Minim minim;
 void setup() 
 
 {
@@ -9,6 +17,11 @@ void setup()
   ui = new UI();
   space = new Space();
   powerups = new Powerups();
+  minim = new Minim(this);
+ player = minim.loadFile("space.mp3", 2048);
+ player.play();
+  
+  
 
   
 
@@ -19,6 +32,7 @@ Rocks rocks;
 UI ui;
 Space space;
 Powerups powerups;
+
 
 
 
@@ -42,4 +56,10 @@ void draw()
  
 
   
+}
+void stop()
+{
+  player.close();
+  minim.stop();
+  super.stop();
 }

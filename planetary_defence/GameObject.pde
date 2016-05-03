@@ -10,6 +10,7 @@ GameObject()
  attack3 = new PVector(350f, 510f);
  power = new PVector(50f, 200f);
  destroy = new PVector(mouseX,mouseY);
+ 
 
  textFont(font);
 healthsize = 50;
@@ -18,8 +19,8 @@ healthsize = 50;
 }
 
 
-
-
+float speedX;
+float speedY;
 float attacksize = 10;
 float planetsize = 100;
 float healthX = mouseX;
