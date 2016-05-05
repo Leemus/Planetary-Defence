@@ -53,7 +53,7 @@ UI()
 if ( power.x == mouseX )
   {
   
-   planethealth += 50;
+   planethealth += 100;
     power.x = -200;
   }
   
